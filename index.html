@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale = 1.0 , width=device-width"/>
+    <title>Simple Calculator</title>
+    <script src= 
+    "https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.js"
+            integrity= 
+    "sha512-BbVEDjbqdN3Eow8+empLMrJlxXRj5nEitiCAK5A1pUr66+jLVejo3PmjIaucRnjlB0P9R3rBUs3g5jXc8ti+fQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"></script> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="inputField">
+            <input type="text" name="digits" id="digits" placeholder="0" readonly/>
+        </div>
+        <div class="buttonsDigits">
+            <button class="buttons" value="7" onclick="display('7')">7</button>
+            <button class="buttons" value="8" onclick="display('8')">8</button>
+            <button class="buttons" value="9" onclick="display('9')">9</button>
+            <button class="buttons" value="Del"  id="delete">Del</button>
+            <button class="buttons" value="4" onclick="display('4')">4</button>
+            <button class="buttons" value="5" onclick="display('5')">5</button>
+            <button class="buttons" value="6" onclick="display('6')">6</button>
+            <button class="buttons" value="+" onclick="display('+')">+</button>
+            <button class="buttons" value="1" onclick="display('1')">1</button>
+            <button class="buttons" value="2" onclick="display('2')">2</button>
+            <button class="buttons" value="3" onclick="display('3')">3</button>
+            <button class="buttons" value="-" onclick="display('-')">-</button>
+            <button class="buttons" value="." onclick="display('.')">.</button>
+            <button class="buttons" value="0" onclick="display('0')">0</button>
+            <button class="buttons" value="/" onclick="display('/')">/</button>
+            <button class="buttons" value="*" onclick="display('*')">*</button>
+            <button class="buttonsReset" value="Reset" onclick="resetValue()">RESET</button>
+            <button class="buttonsEqual" value="=" onclick="solve()">=</button>
+        </div>
+    </div>
+    <script src="/script.js"></script>
+</body>
+</html>
